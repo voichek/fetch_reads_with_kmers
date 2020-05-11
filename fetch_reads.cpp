@@ -24,7 +24,7 @@
 #include <unistd.h>
 
 #include "./include/klib/khash.h"
-#include "./include/kseq/kseq.h"
+#include "./include/klib/kseq.h"
 
 // https://bioinformatics.stackexchange.com/questions/5359/what-is-the-most-compact-data-structure-for-canonical-k-mers-with-the-fastest-lo?noredirect=1&lq=1
 static inline uint64_t hash_64(uint64_t key)
