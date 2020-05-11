@@ -106,6 +106,10 @@ int main(int argc, char *argv[])
 	khash_t(64) *h; // hash table
 	int k = atoi(argv[4]); // len of k-mer
 	fprintf(stderr, "kmer length = %d\n", k);
+	if(k<1 || k>32) {
+		fprintf(stderr, "Error: kmers length should be in the range 1-31\n");
+		return 0;
+	}
 	int i;
 
 	h = kh_init(64); // 
